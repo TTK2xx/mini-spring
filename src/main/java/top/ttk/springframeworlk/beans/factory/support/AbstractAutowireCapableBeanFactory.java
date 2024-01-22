@@ -9,11 +9,11 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
     private InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantiationStrategy();
     @Override
-    protected Object createBean(String beanName, BeanDefinition beanDefinition) throws BeansException {
+    protected Object createBean(String beanName, BeanDefinition beanDefinition, Object[] args) throws BeansException {
         Object bean = null;
         try {
-            bean = beanDefinition.getBeanClass().newInstance();
-        } catch (InstantiationException | IllegalAccessException e) {
+            bean = createBeanInstance(beanDefinition, beanName, args);
+        } catch (Exception e) {
             throw new BeansException("Instantiation of bean failed", e);
         }
 
