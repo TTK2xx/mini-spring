@@ -16,12 +16,12 @@ public class ApiTest {
         BeanDefinition beanDefinition = new BeanDefinition(UserService.class);
         beanFactory.registerBeanDefinition("userService", beanDefinition);
 
-        // 3.第一次获取 bean
+        // 3.第一次获取 bean，经历了很长的调用
         UserService userService = (UserService) beanFactory.getBean("userService");
         userService.queryUserInfo();
 
-        // 4.获取 bean from Singleton
-        UserService userService_singleton = (UserService) beanFactory.getSingleton("userService");
+        // 4.第二次获取 bean 直接从Singleton的缓存里取的
+        UserService userService_singleton = (UserService) beanFactory.getBean("userService");
         userService_singleton.queryUserInfo();
 
         // 5.判断是否是同一个对
