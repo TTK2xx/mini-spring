@@ -1,4 +1,4 @@
-package top.ttk.springframeworlk.beans;
+package top.ttk.springframework.beans;
 
 import java.util.ArrayList;
 import java.util.List;

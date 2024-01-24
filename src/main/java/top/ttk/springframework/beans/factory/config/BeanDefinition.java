@@ -1,6 +1,6 @@
-package top.ttk.springframeworlk.beans.factory.config;
+package top.ttk.springframework.beans.factory.config;
 
-import top.ttk.springframeworlk.beans.PropertyValues;
+import top.ttk.springframework.beans.PropertyValues;
 
 public class BeanDefinition {
 

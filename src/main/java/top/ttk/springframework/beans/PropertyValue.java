@@ -1,4 +1,4 @@
-package top.ttk.springframeworlk.beans;
+package top.ttk.springframework.beans;
 
 public class PropertyValue {
 

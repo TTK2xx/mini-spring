@@ -1,9 +1,9 @@
-package top.ttk.springframeworlk.beans.factory.support;
+package top.ttk.springframework.beans.factory.support;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.NoOp;
-import top.ttk.springframeworlk.beans.BeansException;
-import top.ttk.springframeworlk.beans.factory.config.BeanDefinition;
+import top.ttk.springframework.beans.BeansException;
+import top.ttk.springframework.beans.factory.config.BeanDefinition;
 
 import java.lang.reflect.Constructor;
 

@@ -1,4 +1,4 @@
-package top.ttk.springframeworlk.beans;
+package top.ttk.springframework.beans;
 
 public class BeansException extends RuntimeException{
     public BeansException(String msg) {

@@ -1,6 +1,6 @@
-package top.ttk.springframeworlk.beans.factory.support;
+package top.ttk.springframework.beans.factory.support;
 
-import top.ttk.springframeworlk.beans.factory.config.SingletonBeanRegistry;
+import top.ttk.springframework.beans.factory.config.SingletonBeanRegistry;
 
 import java.util.HashMap;
 import java.util.Map;
